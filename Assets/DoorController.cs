@@ -10,16 +10,28 @@ public class DoorController : MonoBehaviour
     /// OnTriggerEnter is called when the Collider other enters the trigger.
     /// </summary>
     /// <param name="other">The other Collider involved in this collision.</param>
-    private void OnTriggerEnter()
+    /// 
+
+    [SerializeReference] Animator door;
+
+    private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player")){
+            print("Open door!")
+            door.SetBool("IsOpen", true);
 
         }
     }
-}
-    private void OnTriggerExit(){
+
+    private void /// <summary>
+    /// OnTriggerExit is called when the Collider other has stopped touching the trigger.
+    /// </summary>
+    /// <param name="other">The other Collider involved in this collision.</param>
+    private void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player")){
+            print("Close door!")
+             door.SetBool("IsOpen", false);
 
         }
     }
