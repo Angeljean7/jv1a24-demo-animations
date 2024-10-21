@@ -1560,6 +1560,7 @@ GameObject:
   - component: {fileID: 294849394}
   - component: {fileID: 294849393}
   - component: {fileID: 294849392}
+  - component: {fileID: 294849396}
   m_Layer: 0
   m_Name: DoorTrigger
   m_TagString: Untagged
@@ -1595,7 +1596,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294849391}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1653,6 +1654,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294849396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294849391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0da8920c842a44f809417a38c8c23d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &306370394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8582451509887590953, guid: f8c0297a8d99e2747baeb5697c8ecb66,
